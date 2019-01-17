@@ -1,0 +1,501 @@
+2019-01-01 03:47:40.365536: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-01-01 03:47:41.895577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:09:00.0
+totalMemory: 10.91GiB freeMemory: 10.75GiB
+2019-01-01 03:47:41.895619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-01 03:47:42.182391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-01 03:47:42.182428: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-01 03:47:42.182436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-01 03:47:42.183690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10400 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:09:00.0, compute capability: 6.1)
+WARNING:tensorflow:From /home/qijing/markyu/proj2/model/Discriminator.py:85: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+(64, ?, 300)
+(?, ?, 300)
+start pre-train generator:
+start pre-train discriminator:
+epoch:0--0
+epoch 0 g_loss -0.04972763 w_loss 1.2999022
+epoch:0--0	 time:4.113511085510254
+time elapsed of nll-test: 174.0330467224121
+epoch:1	nll-test:6.80717	
+-- epoch: 1, nll: 6.807170
+-- Saving best-leak-gan...
+epoch:0--1
+epoch 0 g_loss -0.056016136 w_loss 2.219926
+epoch:0--1	 time:2.123765707015991
+time elapsed of nll-test: 172.57426643371582
+epoch:2	nll-test:5.8789926	
+-- epoch: 2, nll: 5.878993
+-- Saving best-leak-gan...
+epoch:0--2
+epoch 0 g_loss -0.05738369 w_loss 2.1289692
+epoch:0--2	 time:2.154542922973633
+time elapsed of nll-test: 173.30937099456787
+epoch:3	nll-test:5.551677	
+-- epoch: 3, nll: 5.551677
+-- Saving best-leak-gan...
+epoch:0--3
+epoch 0 g_loss -0.056537516 w_loss 1.9987993
+epoch:0--3	 time:2.150027275085449
+time elapsed of nll-test: 173.81358861923218
+epoch:4	nll-test:5.2823596	
+-- epoch: 4, nll: 5.282360
+-- Saving best-leak-gan...
+epoch:0--4
+epoch 0 g_loss -0.056651127 w_loss 1.9093804
+epoch:0--4	 time:2.173414945602417
+time elapsed of nll-test: 175.07854175567627
+epoch:5	nll-test:5.127744	
+-- epoch: 5, nll: 5.127744
+-- Saving best-leak-gan...
+epoch:0--5
+epoch 0 g_loss -0.056583498 w_loss 1.8764313
+epoch:0--5	 time:2.109184503555298
+time elapsed of nll-test: 175.07819390296936
+epoch:6	nll-test:5.0188103	
+-- epoch: 6, nll: 5.018810
+-- Saving best-leak-gan...
+epoch:0--6
+epoch 0 g_loss -0.056853402 w_loss 1.8418958
+epoch:0--6	 time:2.1293785572052
+time elapsed of nll-test: 174.60266184806824
+epoch:7	nll-test:4.946576	
+-- epoch: 7, nll: 4.946576
+-- Saving best-leak-gan...
+epoch:0--7
+epoch 0 g_loss -0.05619259 w_loss 1.8294852
+epoch:0--7	 time:2.145988941192627
+time elapsed of nll-test: 173.97843980789185
+epoch:8	nll-test:4.889017	
+-- epoch: 8, nll: 4.889017
+-- Saving best-leak-gan...
+epoch:0--8
+epoch 0 g_loss -0.057689052 w_loss 1.8502455
+epoch:0--8	 time:2.1230900287628174
+time elapsed of nll-test: 174.03686594963074
+epoch:9	nll-test:4.8364177	
+-- epoch: 9, nll: 4.836418
+-- Saving best-leak-gan...
+epoch:0--9
+epoch 0 g_loss -0.056991015 w_loss 1.812388
+epoch:0--9	 time:2.104580879211426
+time elapsed of nll-test: 174.18057513237
+epoch:10	nll-test:4.7894716	
+-- epoch: 10, nll: 4.789472
+-- Saving best-leak-gan...
+epoch:0--0	 time:173.20407152175903
+epoch:0--1	 time:173.0240035057068
+epoch:0--2	 time:173.38333249092102
+epoch:0--3	 time:173.7475893497467
+epoch:0--4	 time:172.98362827301025
+epoch:0--0
+epoch:0--1
+epoch:0--2
+epoch:0--3
+epoch:0--4
+epoch:1--0
+epoch 1 g_loss -0.05328253 w_loss 1.596281
+epoch:1--0	 time:2.129830837249756
+epoch:1--1
+epoch 1 g_loss -0.05403101 w_loss 1.6165881
+epoch:1--1	 time:2.1024205684661865
+epoch:1--2
+epoch 1 g_loss -0.054422155 w_loss 1.6821072
+epoch:1--2	 time:2.1229031085968018
+epoch:1--3
+epoch 1 g_loss -0.054635316 w_loss 1.6820683
+epoch:1--3	 time:2.1438825130462646
+epoch:1--4
+epoch 1 g_loss -0.05507528 w_loss 1.755988
+epoch:1--4	 time:2.130546808242798
+epoch:1--5
+epoch 1 g_loss -0.054243453 w_loss 1.6895602
+epoch:1--5	 time:2.1064558029174805
+epoch:1--6
+epoch 1 g_loss -0.05376281 w_loss 1.7102885
+epoch:1--6	 time:2.157189130783081
+epoch:1--7
+epoch 1 g_loss -0.05430011 w_loss 1.7735583
+epoch:1--7	 time:2.120866537094116
+epoch:1--8
+epoch 1 g_loss -0.05411886 w_loss 1.764623
+epoch:1--8	 time:2.108727216720581
+epoch:1--9
+epoch 1 g_loss -0.05406908 w_loss 1.7653114
+epoch:1--9	 time:2.1268208026885986
+epoch:1--0	 time:172.98893904685974
+epoch:1--1	 time:172.81454634666443
+epoch:1--2	 time:173.2912209033966
+epoch:1--3	 time:173.3623411655426
+epoch:1--4	 time:173.91531133651733
+epoch:1--0
+epoch:1--1
+epoch:1--2
+epoch:1--3
+epoch:1--4
+epoch:2--0
+epoch 2 g_loss -0.05359303 w_loss 1.6317723
+epoch:2--0	 time:2.1446778774261475
+epoch:2--1
+epoch 2 g_loss -0.053739794 w_loss 1.6549903
+epoch:2--1	 time:2.1225063800811768
+epoch:2--2
+epoch 2 g_loss -0.05381361 w_loss 1.6841105
+epoch:2--2	 time:2.1438393592834473
+epoch:2--3
+epoch 2 g_loss -0.053421013 w_loss 1.6561126
+epoch:2--3	 time:2.160043716430664
+epoch:2--4
+epoch 2 g_loss -0.05341736 w_loss 1.7167411
+epoch:2--4	 time:2.142524003982544
+epoch:2--5
+epoch 2 g_loss -0.053484406 w_loss 1.6954211
+epoch:2--5	 time:2.1084694862365723
+epoch:2--6
+epoch 2 g_loss -0.054307904 w_loss 1.7417824
+epoch:2--6	 time:2.1561639308929443
+epoch:2--7
+epoch 2 g_loss -0.05427461 w_loss 1.7802116
+epoch:2--7	 time:2.1254782676696777
+epoch:2--8
+epoch 2 g_loss -0.05425787 w_loss 1.7739631
+epoch:2--8	 time:2.0692155361175537
+epoch:2--9
+epoch 2 g_loss -0.05459083 w_loss 1.8020113
+epoch:2--9	 time:2.102539300918579
+epoch:2--0	 time:172.89845204353333
+epoch:2--1	 time:173.558021068573
+epoch:2--2	 time:173.25494527816772
+epoch:2--3	 time:172.89738488197327
+epoch:2--4	 time:172.4145803451538
+epoch:2--0
+epoch:2--1
+epoch:2--2
+epoch:2--3
+epoch:2--4
+epoch:3--0
+epoch 3 g_loss -0.054157842 w_loss 1.6036276
+epoch:3--0	 time:2.163067579269409
+epoch:3--1
+epoch 3 g_loss -0.053571403 w_loss 1.6169229
+epoch:3--1	 time:2.1452364921569824
+epoch:3--2
+epoch 3 g_loss -0.054161787 w_loss 1.638996
+epoch:3--2	 time:2.156893730163574
+epoch:3--3
+epoch 3 g_loss -0.054277368 w_loss 1.6642065
+epoch:3--3	 time:2.130808115005493
+epoch:3--4
+epoch 3 g_loss -0.054539464 w_loss 1.6859336
+epoch:3--4	 time:2.11564302444458
+epoch:3--5
+epoch 3 g_loss -0.054953907 w_loss 1.7269671
+epoch:3--5	 time:2.097691297531128
+epoch:3--6
+epoch 3 g_loss -0.055057865 w_loss 1.7579424
+epoch:3--6	 time:2.1230344772338867
+epoch:3--7
+epoch 3 g_loss -0.055167407 w_loss 1.7415335
+epoch:3--7	 time:2.118196725845337
+epoch:3--8
+epoch 3 g_loss -0.05591075 w_loss 1.8214959
+epoch:3--8	 time:2.1032044887542725
+epoch:3--9
+epoch 3 g_loss -0.055967942 w_loss 1.7982597
+epoch:3--9	 time:2.0831003189086914
+epoch:3--0	 time:172.45814156532288
+epoch:3--1	 time:172.09677934646606
+epoch:3--2	 time:173.09878420829773
+epoch:3--3	 time:172.30950832366943
+epoch:3--4	 time:173.3995659351349
+epoch:3--0
+epoch:3--1
+epoch:3--2
+epoch:3--3
+epoch:3--4
+epoch:4--0
+epoch 4 g_loss -0.055193968 w_loss 1.6128373
+epoch:4--0	 time:2.1233270168304443
+epoch:4--1
+epoch 4 g_loss -0.05587696 w_loss 1.6545479
+epoch:4--1	 time:2.0723342895507812
+epoch:4--2
+epoch 4 g_loss -0.05701053 w_loss 1.7228831
+epoch:4--2	 time:2.1434152126312256
+epoch:4--3
+epoch 4 g_loss -0.056768976 w_loss 1.7286047
+epoch:4--3	 time:2.106346607208252
+epoch:4--4
+epoch 4 g_loss -0.05595401 w_loss 1.7277142
+epoch:4--4	 time:2.1062076091766357
+epoch:4--5
+epoch 4 g_loss -0.057131063 w_loss 1.7735008
+epoch:4--5	 time:2.117642879486084
+epoch:4--6
+epoch 4 g_loss -0.05697756 w_loss 1.8038003
+epoch:4--6	 time:2.1083552837371826
+epoch:4--7
+epoch 4 g_loss -0.057960086 w_loss 1.8595959
+epoch:4--7	 time:2.1162118911743164
+epoch:4--8
+epoch 4 g_loss -0.057434995 w_loss 1.8682489
+epoch:4--8	 time:2.163177728652954
+epoch:4--9
+epoch 4 g_loss -0.05751971 w_loss 1.8809564
+epoch:4--9	 time:2.116433620452881
+epoch:4--0	 time:173.12817478179932
+epoch:4--1	 time:172.56315851211548
+epoch:4--2	 time:172.71860218048096
+epoch:4--3	 time:173.95462679862976
+epoch:4--4	 time:174.16085171699524
+epoch:4--0
+epoch:4--1
+epoch:4--2
+epoch:4--3
+epoch:4--4
+epoch:5--0
+epoch 5 g_loss -0.058334287 w_loss 1.7438703
+epoch:5--0	 time:2.1191539764404297
+time elapsed of nll-test: 172.83497595787048
+epoch:51	nll-test:4.446861	
+-- epoch: 51, nll: 4.446861
+-- Saving best-leak-gan...
+epoch:5--1
+epoch 5 g_loss -0.06163571 w_loss 1.8544402
+epoch:5--1	 time:2.144841432571411
+time elapsed of nll-test: 173.14736199378967
+epoch:52	nll-test:4.4441867	
+-- epoch: 52, nll: 4.444187
+-- Saving best-leak-gan...
+epoch:5--2
+epoch 5 g_loss -0.06091781 w_loss 1.8304809
+epoch:5--2	 time:2.08306622505188
+time elapsed of nll-test: 173.88120412826538
+epoch:53	nll-test:4.439022	
+-- epoch: 53, nll: 4.439022
+-- Saving best-leak-gan...
+epoch:5--3
+epoch 5 g_loss -0.061692942 w_loss 1.8404589
+epoch:5--3	 time:2.14310359954834
+time elapsed of nll-test: 173.77573990821838
+epoch:54	nll-test:4.4341726	
+-- epoch: 54, nll: 4.434173
+-- Saving best-leak-gan...
+epoch:5--4
+epoch 5 g_loss -0.063310556 w_loss 1.9098134
+epoch:5--4	 time:2.132446050643921
+time elapsed of nll-test: 173.08553624153137
+epoch:55	nll-test:4.429553	
+-- epoch: 55, nll: 4.429553
+-- Saving best-leak-gan...
+epoch:5--5
+epoch 5 g_loss -0.0627748 w_loss 1.8610299
+epoch:5--5	 time:2.1590092182159424
+time elapsed of nll-test: 173.53254055976868
+epoch:56	nll-test:4.4266744	
+-- epoch: 56, nll: 4.426674
+-- Saving best-leak-gan...
+epoch:5--6
+epoch 5 g_loss -0.06322922 w_loss 1.8690464
+epoch:5--6	 time:2.12115740776062
+time elapsed of nll-test: 173.50272154808044
+epoch:57	nll-test:4.4256406	
+-- epoch: 57, nll: 4.425641
+-- Saving best-leak-gan...
+epoch:5--7
+epoch 5 g_loss -0.06311165 w_loss 1.917394
+epoch:5--7	 time:2.1281094551086426
+time elapsed of nll-test: 174.4948389530182
+epoch:58	nll-test:4.4287276	
+-- epoch: 58, nll: 4.428728
+epoch:5--8
+epoch 5 g_loss -0.06364842 w_loss 1.8567963
+epoch:5--8	 time:2.104698896408081
+time elapsed of nll-test: 174.57268619537354
+epoch:59	nll-test:4.41097	
+-- epoch: 59, nll: 4.410970
+-- Saving best-leak-gan...
+epoch:5--9
+epoch 5 g_loss -0.06360544 w_loss 1.8576623
+epoch:5--9	 time:2.143775701522827
+time elapsed of nll-test: 173.49176478385925
+epoch:60	nll-test:4.4141183	
+-- epoch: 60, nll: 4.414118
+epoch:5--0	 time:173.72566175460815
+epoch:5--1	 time:174.36672592163086
+epoch:5--2	 time:174.1998872756958
+epoch:5--3	 time:174.13623070716858
+epoch:5--4	 time:173.65264701843262
+epoch:5--0
+epoch:5--1
+epoch:5--2
+epoch:5--3
+epoch:5--4
+epoch:6--0
+epoch 6 g_loss -0.060486794 w_loss 1.8327702
+epoch:6--0	 time:2.151097297668457
+epoch:6--1
+epoch 6 g_loss -0.062311377 w_loss 1.865217
+epoch:6--1	 time:2.1817524433135986
+epoch:6--2
+epoch 6 g_loss -0.062781535 w_loss 1.9136043
+epoch:6--2	 time:2.1060872077941895
+epoch:6--3
+epoch 6 g_loss -0.06293422 w_loss 1.9389596
+epoch:6--3	 time:2.145332098007202
+epoch:6--4
+epoch 6 g_loss -0.06356358 w_loss 2.0011685
+epoch:6--4	 time:2.1349079608917236
+epoch:6--5
+epoch 6 g_loss -0.06459293 w_loss 2.0562675
+epoch:6--5	 time:2.1281399726867676
+epoch:6--6
+epoch 6 g_loss -0.06640423 w_loss 2.1786141
+epoch:6--6	 time:2.1784591674804688
+epoch:6--7
+epoch 6 g_loss -0.06705621 w_loss 2.1874173
+epoch:6--7	 time:2.1067452430725098
+epoch:6--8
+epoch 6 g_loss -0.06782389 w_loss 2.2297971
+epoch:6--8	 time:2.0805068016052246
+epoch:6--9
+epoch 6 g_loss -0.06755245 w_loss 2.3129377
+epoch:6--9	 time:2.105468273162842
+epoch:6--0	 time:173.7542233467102
+epoch:6--1	 time:173.8842465877533
+epoch:6--2	 time:173.77693486213684
+epoch:6--3	 time:173.68970894813538
+epoch:6--4	 time:173.1207103729248
+epoch:6--0
+epoch:6--1
+epoch:6--2
+epoch:6--3
+epoch:6--4
+epoch:7--0
+epoch 7 g_loss -0.066775694 w_loss 1.9865305
+epoch:7--0	 time:2.123828649520874
+epoch:7--1
+epoch 7 g_loss -0.06809397 w_loss 2.0208008
+epoch:7--1	 time:2.091923713684082
+epoch:7--2
+epoch 7 g_loss -0.06938009 w_loss 2.0903347
+epoch:7--2	 time:2.1462459564208984
+epoch:7--3
+epoch 7 g_loss -0.06883032 w_loss 2.115883
+epoch:7--3	 time:2.179664373397827
+epoch:7--4
+epoch 7 g_loss -0.069371745 w_loss 2.1711197
+epoch:7--4	 time:2.1147189140319824
+epoch:7--5
+epoch 7 g_loss -0.07089904 w_loss 2.233358
+epoch:7--5	 time:2.1281819343566895
+epoch:7--6
+epoch 7 g_loss -0.06955482 w_loss 2.205526
+epoch:7--6	 time:2.1087846755981445
+epoch:7--7
+epoch 7 g_loss -0.06999146 w_loss 2.259449
+epoch:7--7	 time:2.1457695960998535
+epoch:7--8
+epoch 7 g_loss -0.069684945 w_loss 2.2966952
+epoch:7--8	 time:2.1241519451141357
+epoch:7--9
+epoch 7 g_loss -0.07086709 w_loss 2.4312968
+epoch:7--9	 time:2.1729750633239746
+epoch:7--0	 time:174.17208003997803
+epoch:7--1	 time:174.03029942512512
+epoch:7--2	 time:173.43188762664795
+epoch:7--3	 time:173.14029026031494
+epoch:7--4	 time:172.38722681999207
+epoch:7--0
+epoch:7--1
+epoch:7--2
+epoch:7--3
+epoch:7--4
+epoch:8--0
+epoch 8 g_loss -0.0710834 w_loss 2.1502018
+epoch:8--0	 time:2.1616926193237305
+epoch:8--1
+epoch 8 g_loss -0.07025668 w_loss 2.1402934
+epoch:8--1	 time:2.158607006072998
+epoch:8--2
+epoch 8 g_loss -0.07279931 w_loss 2.264424
+epoch:8--2	 time:2.1145641803741455
+epoch:8--3
+epoch 8 g_loss -0.07285994 w_loss 2.2991686
+epoch:8--3	 time:2.14617919921875
+epoch:8--4
+epoch 8 g_loss -0.072046295 w_loss 2.2821949
+epoch:8--4	 time:2.1442415714263916
+epoch:8--5
+epoch 8 g_loss -0.072907895 w_loss 2.326516
+epoch:8--5	 time:2.1217806339263916
+epoch:8--6
+epoch 8 g_loss -0.0733071 w_loss 2.427599
+epoch:8--6	 time:2.089287519454956
+epoch:8--7
+epoch 8 g_loss -0.07403031 w_loss 2.4548984
+epoch:8--7	 time:2.12890887260437
+epoch:8--8
+epoch 8 g_loss -0.07381609 w_loss 2.5220914
+epoch:8--8	 time:2.1148571968078613
+epoch:8--9
+epoch 8 g_loss -0.074081376 w_loss 2.5660093
+epoch:8--9	 time:2.1108458042144775
+epoch:8--0	 time:172.64337396621704
+epoch:8--1	 time:172.92782616615295
+epoch:8--2	 time:172.86967396736145
+epoch:8--3	 time:172.84535765647888
+epoch:8--4	 time:173.75941801071167
+epoch:8--0
+epoch:8--1
+epoch:8--2
+epoch:8--3
+epoch:8--4
+epoch:9--0
+epoch 9 g_loss -0.073720135 w_loss 2.246765
+epoch:9--0	 time:2.1758925914764404
+epoch:9--1
+epoch 9 g_loss -0.07466105 w_loss 2.2532177
+epoch:9--1	 time:2.191141366958618
+epoch:9--2
+epoch 9 g_loss -0.07565424 w_loss 2.3126583
+epoch:9--2	 time:2.163541078567505
+epoch:9--3
+epoch 9 g_loss -0.07603046 w_loss 2.4007685
+epoch:9--3	 time:2.188143014907837
+epoch:9--4
+epoch 9 g_loss -0.07592597 w_loss 2.4303122
+epoch:9--4	 time:2.2009074687957764
+epoch:9--5
+epoch 9 g_loss -0.07582927 w_loss 2.3981726
+epoch:9--5	 time:2.1876025199890137
+epoch:9--6
+epoch 9 g_loss -0.07591292 w_loss 2.4792175
+epoch:9--6	 time:2.169339656829834
+epoch:9--7
+epoch 9 g_loss -0.07713028 w_loss 2.60085
+epoch:9--7	 time:2.161221981048584
+epoch:9--8
+epoch 9 g_loss -0.076749906 w_loss 2.5865793
+epoch:9--8	 time:2.196206569671631
+epoch:9--9
+epoch 9 g_loss -0.077440195 w_loss 2.6652324
+epoch:9--9	 time:2.184784173965454
+epoch:9--0	 time:174.5435655117035
+epoch:9--1	 time:175.3998522758484
+epoch:9--2	 time:174.58387064933777
+epoch:9--3	 time:174.38128352165222
+epoch:9--4	 time:174.19016766548157
+epoch:9--0
+epoch:9--1
+epoch:9--2
+epoch:9--3
+epoch:9--4
+
