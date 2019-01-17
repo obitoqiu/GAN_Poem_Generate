@@ -1,0 +1,2 @@
+model_checkpoint_path: "LeakGan-170"
+all_model_checkpoint_paths: "LeakGan-170"
