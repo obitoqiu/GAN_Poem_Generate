@@ -1,0 +1,2 @@
+model_checkpoint_path: "best-leak-gan-99"
+all_model_checkpoint_paths: "best-leak-gan-99"
