@@ -20,7 +20,7 @@
    - `-restorn`从最近的一个checkpoint恢复模型，checkpoint路径可通过`-model_path`指明;</br>
    - `-train_data`和`-val_data`分别指明训练和验证数据集；</br>
    - `-infer`读取`test_data`进行生成，否则进行训练;</br>
-   - `target_path`生成目标文件路径；</br>
+   - `-target_path`生成目标文件路径；</br>
 - `utils`：包含了数据预处理的`utils.py`模块和用于生成器、鉴定器训练数据加载以及实际测试数据加载的`DataLoader.py`模块；此外还包含了Texygen<sup>2</sup> 的`metrics`包，其中包含各种文本生成评测指标；
    - `utils.py`包含对数据预处理理获取相关汉字/ID字典、汉字与ID相互转换等函数；
    - `DataLoader.py`实现了`DataLoader`、`TestDataLoader`、`DisDataLoader`三个类，分别对应于生成器训练的数据加载器、测试数据加载器和鉴别器数据加载器，
