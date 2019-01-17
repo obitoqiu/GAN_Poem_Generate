@@ -26,15 +26,15 @@
    - `DataLoader.py`实现了`DataLoader`、`TestDataLoader`、`DisDataLoader`三个类，分别对应于生成器训练的数据加载器、测试数据加载器和鉴别器数据加载器，
    每个加载器可以不断生成由数据获取的batch</br>
 - `model`包是模型实现的主要部分：
-   -`Gan.py`实现了`LeakGan`的基类；<br>
-   -`Generator.py`实现`LeakGan`的`Generator`生成器类，修改自Texygen和LeakGAN论文的实现<sup>3</sup>，其中增加了一个全连接层的输入编码层替换原始的
+   - `Gan.py`实现了`LeakGan`的基类；<br>
+   - `Generator.py`实现`LeakGan`的`Generator`生成器类，修改自Texygen和LeakGAN论文的实现<sup>3</sup>，其中增加了一个全连接层的输入编码层替换原始的
    网络初始条件，以求实现根据输入生成后续内容的要求;</br>
-   -`Discriminator.py`实现了`LeakGan`的`Discriminator`鉴别器类
-   -`Reward.py`实现了对`LeakGan`进行强化学习训练需要的reward,来自Texygen和LeakGAN论文的实现
-   -`LeakGAN.py`实现了`LeakGan`，是模型的主类，在Texygen实现的基础上进行了大量针对任务的修改，实现了针对根据输入生成后续序列这⼀任务的生成器、鉴别器数据加载方法和训练
+   - `Discriminator.py`实现了`LeakGan`的`Discriminator`鉴别器类
+   - `Reward.py`实现了对`LeakGan`进行强化学习训练需要的reward,来自Texygen和LeakGAN论文的实现
+   - `LeakGAN.py`实现了`LeakGan`，是模型的主类，在Texygen实现的基础上进行了大量针对任务的修改，实现了针对根据输入生成后续序列这⼀任务的生成器、鉴别器数据加载方法和训练
 方法，和对测试数据进行生成的方法，以及训练过程中的指标测试和更新、保存逻辑，⽹络和训练的超参数也在这里修改。 
--其他参数：鉴别器嵌入维度64，dropout_rate为0.75，预训练epoch为80，对抗训练epoch为100，其余参数与Texygen实现中LeakGAN默认值相同</br>
--除上文已提到的地⽅之外，代码思想和具体实现还参考了SeqGAN论文作者的代码<sup>4</sup>以及⼀个采⽤用 SeqGAN进行⽂本⽣成的项⽬Chinese-Hip-pop-Generation<sup>5</sup> </br>
+- 其他参数：鉴别器嵌入维度64，dropout_rate为0.75，预训练epoch为80，对抗训练epoch为100，其余参数与Texygen实现中LeakGAN默认值相同</br>
+- 除上文已提到的地⽅之外，代码思想和具体实现还参考了SeqGAN论文作者的代码<sup>4</sup>以及⼀个采⽤用 SeqGAN进行⽂本⽣成的项⽬Chinese-Hip-pop-Generation<sup>5</sup> </br>
 - 运行逻辑：读⼊训练数据与验证数据 -> 处理得到汉字与ID的相互映射字典 -> 据此标注训练数据 -> 预训练生成器Generator -> 
 预训练鉴别器器Discriminator -> 对抗训练Adversarial Training并每5个epoch验证一次验证集表现，保存checkpoint -> 训练结束</br>
 
