@@ -1,0 +1,536 @@
+2019-01-02 00:39:28.374924: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-01-02 00:39:30.203195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.62
+pciBusID: 0000:0a:00.0
+totalMemory: 10.91GiB freeMemory: 10.75GiB
+2019-01-02 00:39:30.203233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-02 00:39:30.470527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-02 00:39:30.470576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-02 00:39:30.470588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-02 00:39:30.470902: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10400 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0a:00.0, compute capability: 6.1)
+Loading word/index dectionaries...
+Vocab Size: 5889
+WARNING:tensorflow:From /home/qijing/markyu/proj2/model/Discriminator.py:85: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+(64, ?, 300)
+(?, ?, 300)
+start pre-train generator:
+start pre-train discriminator:
+epoch:0--0
+epoch 0 g_loss -0.05703619 w_loss 1.5604944
+epoch:0--0	 time:4.16942024230957
+epoch:0--1
+epoch 0 g_loss -0.057424106 w_loss 1.6238654
+epoch:0--1	 time:2.205662488937378
+epoch:0--2
+epoch 0 g_loss -0.057740025 w_loss 1.5959017
+epoch:0--2	 time:2.1537411212921143
+epoch:0--3
+epoch 0 g_loss -0.057925504 w_loss 1.6575894
+epoch:0--3	 time:2.19382905960083
+epoch:0--4
+epoch 0 g_loss -0.057359397 w_loss 1.6452439
+epoch:0--4	 time:2.1610636711120605
+time elapsed of nll-test: 175.22443270683289
+epoch:5	nll-test:3.7434344	
+-- epoch: 5, nll: 3.743434
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_5_3.743434.txt
+epoch:0--5
+epoch 0 g_loss -0.057298504 w_loss 1.4528053
+epoch:0--5	 time:2.149869680404663
+epoch:0--6
+epoch 0 g_loss -0.05775588 w_loss 1.4743578
+epoch:0--6	 time:2.1624276638031006
+epoch:0--7
+epoch 0 g_loss -0.05717714 w_loss 1.4796383
+epoch:0--7	 time:2.143843173980713
+epoch:0--8
+epoch 0 g_loss -0.05766801 w_loss 1.4806654
+epoch:0--8	 time:2.156686544418335
+epoch:0--9
+epoch 0 g_loss -0.057913065 w_loss 1.5508915
+epoch:0--9	 time:2.1988918781280518
+time elapsed of nll-test: 174.66412806510925
+epoch:10	nll-test:3.717893	
+-- epoch: 10, nll: 3.717893
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_10_3.717893.txt
+epoch:0--0	 time:175.26364493370056
+epoch:0--1	 time:175.8852837085724
+epoch:0--2	 time:175.64393520355225
+epoch:0--3	 time:175.59593296051025
+epoch:0--4	 time:174.0487139225006
+epoch:0--0
+epoch:0--1
+epoch:0--2
+epoch:0--3
+epoch:0--4
+epoch:1--0
+epoch 1 g_loss -0.058177825 w_loss 1.4839647
+epoch:1--0	 time:2.2453055381774902
+epoch:1--1
+epoch 1 g_loss -0.05802853 w_loss 1.4877752
+epoch:1--1	 time:2.1923840045928955
+epoch:1--2
+epoch 1 g_loss -0.057125468 w_loss 1.4986595
+epoch:1--2	 time:2.2246735095977783
+epoch:1--3
+epoch 1 g_loss -0.057084333 w_loss 1.4971157
+epoch:1--3	 time:2.218242645263672
+epoch:1--4
+epoch 1 g_loss -0.057093903 w_loss 1.4969112
+epoch:1--4	 time:2.244668483734131
+time elapsed of nll-test: 175.67043566703796
+epoch:15	nll-test:3.7672718	
+-- epoch: 15, nll: 3.767272
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_15_3.767272.txt
+epoch:1--5
+epoch 1 g_loss -0.057869274 w_loss 1.4894254
+epoch:1--5	 time:2.2117726802825928
+epoch:1--6
+epoch 1 g_loss -0.058731496 w_loss 1.5135028
+epoch:1--6	 time:2.2095372676849365
+epoch:1--7
+epoch 1 g_loss -0.058192313 w_loss 1.4951808
+epoch:1--7	 time:2.2168333530426025
+epoch:1--8
+epoch 1 g_loss -0.05789648 w_loss 1.5362543
+epoch:1--8	 time:2.225027561187744
+epoch:1--9
+epoch 1 g_loss -0.05763068 w_loss 1.4807612
+epoch:1--9	 time:2.203505754470825
+time elapsed of nll-test: 176.836088180542
+epoch:20	nll-test:3.7160351	
+-- epoch: 20, nll: 3.716035
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_20_3.716035.txt
+epoch:1--0	 time:176.33164715766907
+epoch:1--1	 time:178.15658736228943
+epoch:1--2	 time:178.19139575958252
+epoch:1--3	 time:177.00342750549316
+epoch:1--4	 time:178.22415137290955
+epoch:1--0
+epoch:1--1
+epoch:1--2
+epoch:1--3
+epoch:1--4
+epoch:2--0
+epoch 2 g_loss -0.059029598 w_loss 1.4961383
+epoch:2--0	 time:2.181034564971924
+epoch:2--1
+epoch 2 g_loss -0.059082538 w_loss 1.5056947
+epoch:2--1	 time:2.192338705062866
+epoch:2--2
+epoch 2 g_loss -0.059181083 w_loss 1.5186276
+epoch:2--2	 time:2.198881149291992
+epoch:2--3
+epoch 2 g_loss -0.058925837 w_loss 1.5662934
+epoch:2--3	 time:2.202300786972046
+epoch:2--4
+epoch 2 g_loss -0.059430256 w_loss 1.5779401
+epoch:2--4	 time:2.2728662490844727
+time elapsed of nll-test: 175.89707040786743
+epoch:25	nll-test:3.730988	
+-- epoch: 25, nll: 3.730988
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_25_3.730988.txt
+epoch:2--5
+epoch 2 g_loss -0.059914783 w_loss 1.4492234
+epoch:2--5	 time:2.217229127883911
+epoch:2--6
+epoch 2 g_loss -0.059604004 w_loss 1.5141692
+epoch:2--6	 time:2.221498966217041
+epoch:2--7
+epoch 2 g_loss -0.061241638 w_loss 1.5617663
+epoch:2--7	 time:2.2139601707458496
+epoch:2--8
+epoch 2 g_loss -0.060434125 w_loss 1.5359763
+epoch:2--8	 time:2.211167812347412
+epoch:2--9
+epoch 2 g_loss -0.06231421 w_loss 1.6355873
+epoch:2--9	 time:2.2326719760894775
+time elapsed of nll-test: 176.58788418769836
+epoch:30	nll-test:3.7207887	
+-- epoch: 30, nll: 3.720789
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_30_3.720789.txt
+epoch:2--0	 time:177.2182493209839
+epoch:2--1	 time:176.64370441436768
+epoch:2--2	 time:177.07541346549988
+epoch:2--3	 time:176.85394859313965
+epoch:2--4	 time:176.9808566570282
+epoch:2--0
+epoch:2--1
+epoch:2--2
+epoch:2--3
+epoch:2--4
+epoch:3--0
+epoch 3 g_loss -0.058817122 w_loss 1.5140934
+epoch:3--0	 time:2.222482919692993
+epoch:3--1
+epoch 3 g_loss -0.06081627 w_loss 1.5949218
+epoch:3--1	 time:2.271014451980591
+epoch:3--2
+epoch 3 g_loss -0.060594425 w_loss 1.5742842
+epoch:3--2	 time:2.2332074642181396
+epoch:3--3
+epoch 3 g_loss -0.06097787 w_loss 1.5946777
+epoch:3--3	 time:2.2212111949920654
+epoch:3--4
+epoch 3 g_loss -0.059688006 w_loss 1.5864607
+epoch:3--4	 time:2.2466139793395996
+time elapsed of nll-test: 176.3395290374756
+epoch:35	nll-test:3.7198782	
+-- epoch: 35, nll: 3.719878
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_35_3.719878.txt
+epoch:3--5
+epoch 3 g_loss -0.061857313 w_loss 1.5668398
+epoch:3--5	 time:2.195535898208618
+epoch:3--6
+epoch 3 g_loss -0.062565036 w_loss 1.5744004
+epoch:3--6	 time:2.2321553230285645
+epoch:3--7
+epoch 3 g_loss -0.06254726 w_loss 1.6379465
+epoch:3--7	 time:2.2654340267181396
+epoch:3--8
+epoch 3 g_loss -0.06282408 w_loss 1.6542677
+epoch:3--8	 time:2.214782238006592
+epoch:3--9
+epoch 3 g_loss -0.063694246 w_loss 1.6485745
+epoch:3--9	 time:2.1905744075775146
+time elapsed of nll-test: 175.7422661781311
+epoch:40	nll-test:3.7302365	
+-- epoch: 40, nll: 3.730237
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_40_3.730237.txt
+epoch:3--0	 time:175.9584949016571
+epoch:3--1	 time:175.7883653640747
+epoch:3--2	 time:175.98335766792297
+epoch:3--3	 time:177.5155074596405
+epoch:3--4	 time:176.70948481559753
+epoch:3--0
+epoch:3--1
+epoch:3--2
+epoch:3--3
+epoch:3--4
+epoch:4--0
+epoch 4 g_loss -0.06261269 w_loss 1.6389161
+epoch:4--0	 time:2.192577600479126
+epoch:4--1
+epoch 4 g_loss -0.06302806 w_loss 1.6362617
+epoch:4--1	 time:2.2292516231536865
+epoch:4--2
+epoch 4 g_loss -0.062713414 w_loss 1.642778
+epoch:4--2	 time:2.268796920776367
+epoch:4--3
+epoch 4 g_loss -0.06349269 w_loss 1.66009
+epoch:4--3	 time:2.178809642791748
+epoch:4--4
+epoch 4 g_loss -0.06373009 w_loss 1.6465052
+epoch:4--4	 time:2.217710494995117
+time elapsed of nll-test: 176.89313793182373
+epoch:45	nll-test:3.7224848	
+-- epoch: 45, nll: 3.722485
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_45_3.722485.txt
+epoch:4--5
+epoch 4 g_loss -0.063939184 w_loss 1.6161503
+epoch:4--5	 time:2.1734113693237305
+epoch:4--6
+epoch 4 g_loss -0.064611666 w_loss 1.644733
+epoch:4--6	 time:2.235891342163086
+epoch:4--7
+epoch 4 g_loss -0.064667 w_loss 1.6905246
+epoch:4--7	 time:2.2186472415924072
+epoch:4--8
+epoch 4 g_loss -0.065704264 w_loss 1.7206676
+epoch:4--8	 time:2.216400384902954
+epoch:4--9
+epoch 4 g_loss -0.06641501 w_loss 1.742051
+epoch:4--9	 time:2.2219831943511963
+time elapsed of nll-test: 176.61428999900818
+epoch:50	nll-test:3.7201092	
+-- epoch: 50, nll: 3.720109
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_50_3.720109.txt
+epoch:4--0	 time:176.8152117729187
+epoch:4--1	 time:177.50091814994812
+epoch:4--2	 time:176.45339059829712
+epoch:4--3	 time:178.08183312416077
+epoch:4--4	 time:177.77544283866882
+epoch:4--0
+epoch:4--1
+epoch:4--2
+epoch:4--3
+epoch:4--4
+epoch:5--0
+epoch 5 g_loss -0.061499074 w_loss 1.599042
+epoch:5--0	 time:2.1840732097625732
+epoch:5--1
+epoch 5 g_loss -0.06417634 w_loss 1.6511376
+epoch:5--1	 time:2.2398390769958496
+epoch:5--2
+epoch 5 g_loss -0.066261634 w_loss 1.7198851
+epoch:5--2	 time:2.215956449508667
+epoch:5--3
+epoch 5 g_loss -0.06792367 w_loss 1.8215902
+epoch:5--3	 time:2.2239444255828857
+epoch:5--4
+epoch 5 g_loss -0.066784196 w_loss 1.7515659
+epoch:5--4	 time:2.215869665145874
+time elapsed of nll-test: 176.4051239490509
+epoch:55	nll-test:3.7303267	
+-- epoch: 55, nll: 3.730327
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_55_3.730327.txt
+epoch:5--5
+epoch 5 g_loss -0.06755082 w_loss 1.722544
+epoch:5--5	 time:2.2016892433166504
+epoch:5--6
+epoch 5 g_loss -0.0686035 w_loss 1.7911682
+epoch:5--6	 time:2.2394039630889893
+epoch:5--7
+epoch 5 g_loss -0.0689152 w_loss 1.8451855
+epoch:5--7	 time:2.1957361698150635
+epoch:5--8
+epoch 5 g_loss -0.06924387 w_loss 1.8745209
+epoch:5--8	 time:2.213808536529541
+epoch:5--9
+epoch 5 g_loss -0.06822147 w_loss 1.8425483
+epoch:5--9	 time:2.188932418823242
+time elapsed of nll-test: 176.47861003875732
+epoch:60	nll-test:3.7323277	
+-- epoch: 60, nll: 3.732328
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_60_3.732328.txt
+epoch:5--0	 time:176.63751888275146
+epoch:5--1	 time:177.22765827178955
+epoch:5--2	 time:177.23031425476074
+epoch:5--3	 time:177.12284421920776
+epoch:5--4	 time:175.8927891254425
+epoch:5--0
+epoch:5--1
+epoch:5--2
+epoch:5--3
+epoch:5--4
+epoch:6--0
+epoch 6 g_loss -0.068700954 w_loss 1.7658846
+epoch:6--0	 time:2.2137532234191895
+epoch:6--1
+epoch 6 g_loss -0.06985897 w_loss 1.8405404
+epoch:6--1	 time:2.2603940963745117
+epoch:6--2
+epoch 6 g_loss -0.07244022 w_loss 1.9338372
+epoch:6--2	 time:2.2484006881713867
+epoch:6--3
+epoch 6 g_loss -0.07117446 w_loss 1.9268799
+epoch:6--3	 time:2.2040247917175293
+epoch:6--4
+epoch 6 g_loss -0.07058787 w_loss 1.9145645
+epoch:6--4	 time:2.259833574295044
+time elapsed of nll-test: 175.95827054977417
+epoch:65	nll-test:3.7305198	
+-- epoch: 65, nll: 3.730520
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_65_3.730520.txt
+epoch:6--5
+epoch 6 g_loss -0.07181609 w_loss 1.8353151
+epoch:6--5	 time:2.248671770095825
+epoch:6--6
+epoch 6 g_loss -0.07182343 w_loss 1.8405812
+epoch:6--6	 time:2.1894142627716064
+epoch:6--7
+epoch 6 g_loss -0.07285234 w_loss 1.8994557
+epoch:6--7	 time:2.20595383644104
+epoch:6--8
+epoch 6 g_loss -0.072355926 w_loss 1.9434941
+epoch:6--8	 time:2.1660008430480957
+epoch:6--9
+epoch 6 g_loss -0.0730398 w_loss 1.9765075
+epoch:6--9	 time:2.2455520629882812
+time elapsed of nll-test: 177.0060510635376
+epoch:70	nll-test:3.7176323	
+-- epoch: 70, nll: 3.717632
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_70_3.717632.txt
+epoch:6--0	 time:177.10611152648926
+epoch:6--1	 time:176.77275776863098
+epoch:6--2	 time:177.2985861301422
+epoch:6--3	 time:177.11495208740234
+epoch:6--4	 time:177.0497715473175
+epoch:6--0
+epoch:6--1
+epoch:6--2
+epoch:6--3
+epoch:6--4
+epoch:7--0
+epoch 7 g_loss -0.07138258 w_loss 1.8463826
+epoch:7--0	 time:2.2309324741363525
+epoch:7--1
+epoch 7 g_loss -0.072916195 w_loss 1.9220229
+epoch:7--1	 time:2.2202301025390625
+epoch:7--2
+epoch 7 g_loss -0.07330902 w_loss 1.9441701
+epoch:7--2	 time:2.2225139141082764
+epoch:7--3
+epoch 7 g_loss -0.0741095 w_loss 1.9526391
+epoch:7--3	 time:2.1942296028137207
+epoch:7--4
+epoch 7 g_loss -0.07357305 w_loss 1.9413213
+epoch:7--4	 time:2.2284653186798096
+time elapsed of nll-test: 176.3683614730835
+epoch:75	nll-test:3.717858	
+-- epoch: 75, nll: 3.717858
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_75_3.717858.txt
+epoch:7--5
+epoch 7 g_loss -0.07498288 w_loss 1.9249415
+epoch:7--5	 time:2.2128002643585205
+epoch:7--6
+epoch 7 g_loss -0.07410691 w_loss 1.9453242
+epoch:7--6	 time:2.2276294231414795
+epoch:7--7
+epoch 7 g_loss -0.07579217 w_loss 2.0099435
+epoch:7--7	 time:2.150150775909424
+epoch:7--8
+epoch 7 g_loss -0.075527675 w_loss 2.0550387
+epoch:7--8	 time:2.25876784324646
+epoch:7--9
+epoch 7 g_loss -0.0759414 w_loss 2.0267165
+epoch:7--9	 time:2.2185492515563965
+time elapsed of nll-test: 178.10680222511292
+epoch:80	nll-test:3.705952	
+-- epoch: 80, nll: 3.705952
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_80_3.705952.txt
+epoch:7--0	 time:177.36712789535522
+epoch:7--1	 time:177.0053288936615
+epoch:7--2	 time:176.75509810447693
+epoch:7--3	 time:176.66690301895142
+epoch:7--4	 time:176.06761956214905
+epoch:7--0
+epoch:7--1
+epoch:7--2
+epoch:7--3
+epoch:7--4
+epoch:8--0
+epoch 8 g_loss -0.0755293 w_loss 1.9492383
+epoch:8--0	 time:2.232640266418457
+epoch:8--1
+epoch 8 g_loss -0.075910516 w_loss 1.947846
+epoch:8--1	 time:2.249617576599121
+epoch:8--2
+epoch 8 g_loss -0.07612553 w_loss 1.9983093
+epoch:8--2	 time:2.215114116668701
+epoch:8--3
+epoch 8 g_loss -0.07586953 w_loss 2.008534
+epoch:8--3	 time:2.187044858932495
+epoch:8--4
+epoch 8 g_loss -0.0768388 w_loss 2.114918
+epoch:8--4	 time:2.2684359550476074
+time elapsed of nll-test: 176.40151405334473
+epoch:85	nll-test:3.711187	
+-- epoch: 85, nll: 3.711187
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_85_3.711187.txt
+epoch:8--5
+epoch 8 g_loss -0.07582209 w_loss 1.995257
+epoch:8--5	 time:2.2268118858337402
+epoch:8--6
+epoch 8 g_loss -0.077061795 w_loss 2.0172055
+epoch:8--6	 time:2.242493152618408
+epoch:8--7
+epoch 8 g_loss -0.077030994 w_loss 2.0493557
+epoch:8--7	 time:2.279083013534546
+epoch:8--8
+epoch 8 g_loss -0.077023275 w_loss 2.0565255
+epoch:8--8	 time:2.2185027599334717
+epoch:8--9
+epoch 8 g_loss -0.07756059 w_loss 2.13593
+epoch:8--9	 time:2.2408900260925293
+time elapsed of nll-test: 176.61363697052002
+epoch:90	nll-test:3.70709	
+-- epoch: 90, nll: 3.707090
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_90_3.707090.txt
+epoch:8--0	 time:177.7129054069519
+epoch:8--1	 time:177.99112629890442
+epoch:8--2	 time:178.58154368400574
+epoch:8--3	 time:177.2949812412262
+epoch:8--4	 time:176.82823252677917
+epoch:8--0
+epoch:8--1
+epoch:8--2
+epoch:8--3
+epoch:8--4
+epoch:9--0
+epoch 9 g_loss -0.07958934 w_loss 2.0758104
+epoch:9--0	 time:2.183924674987793
+epoch:9--1
+epoch 9 g_loss -0.07841136 w_loss 2.046746
+epoch:9--1	 time:2.2565841674804688
+epoch:9--2
+epoch 9 g_loss -0.07923653 w_loss 2.0690446
+epoch:9--2	 time:2.2314541339874268
+epoch:9--3
+epoch 9 g_loss -0.07810908 w_loss 2.0564148
+epoch:9--3	 time:2.2360730171203613
+epoch:9--4
+epoch 9 g_loss -0.079169765 w_loss 2.1652632
+epoch:9--4	 time:2.237366199493408
+time elapsed of nll-test: 177.01763725280762
+epoch:95	nll-test:3.7025106	
+-- epoch: 95, nll: 3.702511
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_95_3.702511.txt
+epoch:9--5
+epoch 9 g_loss -0.07945998 w_loss 2.0865283
+epoch:9--5	 time:2.2235395908355713
+epoch:9--6
+epoch 9 g_loss -0.08029679 w_loss 2.1244419
+epoch:9--6	 time:2.191643714904785
+epoch:9--7
+epoch 9 g_loss -0.07694525 w_loss 2.058517
+epoch:9--7	 time:2.1957170963287354
+epoch:9--8
+epoch 9 g_loss -0.079580486 w_loss 2.1952782
+epoch:9--8	 time:2.2563107013702393
+time elapsed of nll-test: 176.2575798034668
+epoch:99	nll-test:3.6939406	
+-- epoch: 99, nll: 3.693941
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_99_3.693941.txt
+epoch:9--9
+epoch 9 g_loss -0.08004406 w_loss 2.0464709
+epoch:9--9	 time:2.2024037837982178
+time elapsed of nll-test: 176.1651327610016
+epoch:100	nll-test:3.68661	
+-- epoch: 100, nll: 3.686610
+-- Saving best-leak-gan...
+-- Generating poem on val data... 
+Finished generating 1000 poems to gen_val/val_100_3.686610.txt
+epoch:9--0	 time:176.0202796459198
+epoch:9--1	 time:176.71417212486267
+epoch:9--2	 time:175.96233558654785
+epoch:9--3	 time:176.4896638393402
+epoch:9--4	 time:176.13560819625854
+epoch:9--0
+epoch:9--1
+epoch:9--2
+epoch:9--3
+epoch:9--4
