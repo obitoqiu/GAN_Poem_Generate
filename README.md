@@ -4,6 +4,11 @@
 自然语言处理导论课程的扩展可选项目.实现了根据输入的七言绝句的第一句生成后三句的功能</br>
 基本框架是LeakGAN<sup>1</sup>加入输入编码器模型</br>
 感谢合作的Y同学在项目中的带飞qwq</br>
+### 环境
+- **GPU：Nvidia GTX 1080Ti**
+- **OS：Ubuntu 16.04**
+- **Environments：CUDA9.0,Python3.5**
+- **Libs：tensorflow 1.12.0,NLTK 3.3,Numpy 1.14.0**
 ### 代码实现
 - `data`:保存训练、验证和测试数据的目录</br>
 - `save`:保存模型checkpoint、预处理理得到的字与ID相互映射的字典、代码运⾏行行过程中临时的⽣生成数据和验证集⽣生成结果等</br>
